@@ -1,0 +1,89 @@
+:root {
+    --color-principal: #1a1a1a;    /* Negro suave */
+    --color-acento: #0a1fdb;       /* El azul que elegiste */
+    --color-fondo: #f4f7f6;        /* Gris muy claro */
+    --color-blanco: #ffffff;
+    --sombra: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    line-height: 1.6;
+}
+
+.container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+header {
+    background-color: var(--color-blanco);
+    padding: 20px 0;
+    box-shadow: var(--sombra);
+    position: sticky; top: 0; z-index: 100;
+}
+
+header .container { display: flex; justify-content: space-between; align-items: center; }
+
+nav ul { list-style: none; display: flex; gap: 20px; }
+
+nav a {
+    text-decoration: none;
+    color: var(--color-principal);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover { color: var(--color-acento); }
+
+main { padding: 40px 0; }
+
+.hero {
+    background-color: var(--color-blanco);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+    text-align: center;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 550px;
+}
+
+/* --- Estilos de Formulario --- */
+.form-group { text-align: left; margin-bottom: 15px; }
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--color-acento);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+footer { padding: 20px; text-align: center; color: #777; }
